@@ -1,0 +1,53 @@
+
+.home {
+    height: 100vh;
+    background-image: url(../images/background/background1.webp);
+    background-size: cover;
+    position: relative;
+}
+
+.home-content {
+    /* use hero image concept to center the elements */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 65%;
+}
+
+.home .title {
+    color: cornsilk;
+    font-size: 3.1rem;
+    /* 3.1 *16    html rem = 16*/
+    text-transform: uppercase;
+    /* to make text Capitalize  */
+}
+
+.home-desc {
+    color: cornsilk;
+    margin: 20px 0;
+    letter-spacing: 2px;
+    /*  ابعد عن الحروف عن بعض*/
+    line-height: 1.5;
+    text-transform: capitalize;
+}
+
+.home .btn {
+    min-width: 150px;
+    padding: 15px 0;
+    border-radius: 5px;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    color: black
+}
+
+.home .btn-start {
+    margin-right: 10px;
+}
+
+.home .btn-learn {
+    background-color: var(--maincolor);
+    color: blanchedalmond;
+}

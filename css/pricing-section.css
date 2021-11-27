@@ -1,0 +1,112 @@
+
+.pricing-table-contents {
+    display: flex;
+    justify-content: space-between;
+}
+
+.pricing-table-item {
+    width: 30%;
+    padding: 40px 10px;
+    border: 1px solid #e8e8e8;
+    text-align: center;
+    transition: color .5s;
+}
+
+.pricing-title {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: var(--graycolor);
+}
+
+.pricing-text {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #6195ff;
+    border-radius: 50%;
+    padding-top: 15px;
+    margin: 20px auto;
+}
+
+
+.pricing-text .per-dollar {
+    font-size: 30px;
+}
+
+.pricing-text .per-month {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12px;
+
+}
+
+.pricing-list {
+    list-style: none;
+    margin-bottom: 20px;
+
+}
+
+.pricing-list li {
+    color: var(--graycolor);
+    line-height: 1.8;
+}
+
+
+.pricing-item-purchase {
+    background: none;
+    border: none;
+    display: block;
+    width: 140px;
+    margin: 15px auto;
+    padding: 10px;
+    color: var(--maincolor);
+    border: 2px solid var(--maincolor);
+}
+
+
+
+.left-to-right-effect, .top-to-botton-effect {
+    position: relative;
+}
+
+.left-to-right-effect:after, .top-to-botton-effect:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #333;
+    z-index: -1;
+}
+
+.left-to-right-effect:after {
+    width: 0;
+    transition: width 0.9s;
+}
+
+.left-to-right-effect:hover:after {
+    width: 100%;
+}
+
+.top-to-botton-effect:after {
+    height: 0;
+    transition: height 0.9s;
+}
+
+
+.top-to-botton-effect:after {
+    height: 0;
+
+}
+
+.top-to-botton-effect:hover:after {
+    height: 100%;
+
+}
+
+
+
+
+.pricing-table-item:hover .pricing-text {
+    color: white;
+}

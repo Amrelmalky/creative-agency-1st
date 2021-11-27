@@ -1,0 +1,33 @@
+
+.statistics {
+    background-image: url("../images/background/background2.webp");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 300px;
+    position: relative;
+}
+
+.statistics-contents {
+    display: flex;
+    padding-top: 100px;
+}
+
+.statistics-item {
+    width: 25%;
+    text-align: center;
+}
+
+.statistics-item i {
+    color: var(--maincolor);;
+    margin-bottom: 15px;
+}
+
+.statistics-numbers {
+    font-size: 30px;
+    font-weight: bold;
+    color: #e8e8e8;
+}
+
+.statistics-desc {
+    color: #e8e8e8
+}

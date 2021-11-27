@@ -1,0 +1,41 @@
+
+.about-content {
+    display: flex;
+    flex-flow: row;
+    justify-content: space-around;
+}
+
+.about-item {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid #e8e8e8;
+    padding: 50px 25px;
+    transition: color 1s;
+}
+
+.about-item:hover .about-item-title {
+    color: aliceblue;
+}
+
+.about-item .icon {
+    color: #6195ff;
+    padding-bottom: 10px;
+}
+
+.about-item-title {
+    text-transform: capitalize;
+   
+}
+
+.about-item-desc {
+    line-height: 1.6;
+   
+    color: var(--graycolor);
+}
+
+.about-item-link {
+    color: var(--maincolor);;
+    text-transform: capitalize;
+}
+

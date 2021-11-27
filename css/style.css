@@ -1,0 +1,132 @@
+/* website Contents 
+----------------------------
+1- common styles.
+2- General Css styles.
+3- site Sections : 
+                    3.0 - Header Section done
+                    3.1 - Home Section
+                    3.2 - About Section
+                    3.3 - Portoflio Section
+                    3.4 - services Section
+                    3.5 - Prices Section
+                    3.6 - Team Section
+                    3.7 - Blog page
+                    3.8 - contact Section
+                    3.9 - Footer Section
+*/
+
+/* 1- Common Styles
+- Container to center the webpage
+- overlay
+- Opacity hover
+- Section header
+- Section padding
+- hover effect 1 ( from left to right)
+- hover effect 2  ( from top to the bottom ) 
+
+*/
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.5)
+}
+
+.hover-opacity {
+    transition: opacity 0.7s;
+    /* i wrote (opacity 0.7s) to make transition only for opacity */
+}
+
+.hover-opacity:hover {
+    opacity: 0.5;
+}
+
+/* general padding for all sections */
+
+.padding-y {
+    padding: 120px 0;
+}
+
+
+
+/* 2- General Css Styles */
+
+/*general reset*/
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    /*  border and padding متخليش تزود عن المساحة المتاحة للعنصر  */
+}
+
+body {
+    font-family: 'Varela Round', sans-serif;
+}
+
+.container {
+    margin: auto;
+    width: 80%;
+}
+
+.clear {
+    clear: both;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: montserrat, sans-serif;
+}
+
+button {
+    font-family: inherit;
+}
+
+ul{
+    list-style: none;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.section-header {
+    text-align: center;
+}
+
+.section-header .section-title {
+    font-size: 35px;
+    text-transform: capitalize;
+   
+}
+
+.section-header .line {
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: var(--maincolor);
+    margin: 0 auto 71px auto;
+
+}
+/* End General Css style*/
+
+/* 3- Site Sections */
+
+/* Header*/
+/* Home Section*/
+/* About section*/
+/* portflio section */
+/* offer section */
+/* service section*/
+/* statistics section*/
+/* pricing section  */
+/* testimonial section */
+/* our team section */
+/* news section  */
+/* contact section */
+/* footer*/

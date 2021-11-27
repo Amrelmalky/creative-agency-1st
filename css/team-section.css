@@ -1,0 +1,96 @@
+
+.our-team {
+    display: flex;
+    justify-content: space-between;
+}
+
+.team-members {
+    width: 30%;
+    background-color: #e8e8e8;
+    padding: 40px 15px;
+    text-align: center;
+    border-radius: 5px;
+
+}
+
+.team-members .team-img {
+    width: 90%;
+    margin: auto;
+    position: relative;
+
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0px;
+    right: 0;
+    bottom: 4px;
+    background: rgba(0, 0, 0, 0.4);
+    /* الطبقة الشفافة */
+    opacity: 0;
+    /* علشان اخليها تشتغل بس لما نعمل هوفر */
+    visibility: hidden;
+    /* علشان تختفى العنصر كله*/
+
+
+}
+
+.team-overlay a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background:var(--maincolor);
+    color: var(--whitecolor);
+    margin-left: auto;
+    /* to move any block element from left to riht use margin-left:auto*/
+
+}
+
+.team-overlay i {
+    line-height: 40px;
+    /* center single item using inline-height same height of his parent = 40px  */
+}
+
+.team-members:hover .team-overlay {
+    opacity: 1;
+    visibility: visible;
+
+}
+
+.team-members:hover .team-info-name {
+    color: var(--whitecolor);
+
+
+}
+
+.team-members:hover .team-info-title {
+    color: var(--maincolor);
+
+}
+
+.team-members.top-to-botton-effect
+
+/* very very important to show overlay over all items */
+    {
+    z-index: 1;
+}
+
+
+.team-members .team-img img {
+    width: 100%;
+
+}
+
+.team-info .team-info-name {
+    color: #222;
+    margin: 10px;
+    transition: color 0.5s;
+}
+
+.team-info .team-info-title {
+    color: var(--graycolor);
+    text-transform: uppercase;
+    font-size: 12px;
+    transition: color 0.5s;
+}

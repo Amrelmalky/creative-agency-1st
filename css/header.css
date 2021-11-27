@@ -1,0 +1,103 @@
+
+.header {
+    position: fixed;
+    /* position fixed & absloute transform element from display block to display inline-block */
+    z-index: 10;
+    width: 100%;
+    background:rgba(0,0,0,0.4);
+    height: 70px;
+}
+
+/* 
+.header-content {
+    overflow: hidden;
+} */
+
+/* to slove float problem
+
+*/
+
+.header .logo {
+    width: 40%;
+    float: left;
+}
+
+.header .logo img {
+    width: 20%;
+    margin-top: 24px;
+}
+
+.header .nav {
+    width: 60%;
+    float: left;
+    list-style: none;
+    text-align: right;
+}
+
+.header .nav>li {
+    display: inline-block;
+    font-size: 14px;
+    margin: 2px;
+}
+
+.header .nav>li>a {
+    color: white;
+    display: block;
+    padding: 30px 8px;
+}
+
+/* hover on <a>
+    /* created content by myself :
+                                 - display block bcz <a> elemnt is inline enable me to give to it  width & height
+                                 - width 0px & height 3px & background-color and when make hover width become 100% 
+                                 - transition: width 0.5s;*/
+
+.header .nav>li>a.active::after, .header .nav>li>a::after {
+    content: "";
+    display: block;
+    height: 2.5px;
+    margin-top: 2px;
+    background-color: var(--maincolor);
+    transition: width .5s;
+}
+
+.header .nav>li>a.active::after {
+    width: 100%;
+}
+
+.header .nav>li>a::after {
+    width: 0;
+}
+
+.header .nav>li>a:hover::after {
+    width: 100%;
+}
+
+.dropdown {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    background-color: var(--maincolor);;
+    /* text-decoration: none; */
+    list-style-type: none;
+    width: 150px;
+    text-align: center;
+    left: -70%;
+    top: 70%;
+    opacity: 0px;
+    visibility: hidden;
+    transition: opacity 0.4s, visibility 0.4s;
+}
+
+.dropdown-menu a {
+    color: white;
+    display: block;
+    padding: 10px;
+}
+
+.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}

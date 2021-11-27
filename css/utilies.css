@@ -1,0 +1,39 @@
+/* marging bottom  */
+
+.mg-b-10 {
+    margin-bottom: 10px;
+}
+
+
+
+.mg-b-15 {
+    margin-bottom: 15px;
+}
+
+.mg-b-16 {
+    margin-bottom: 16px;
+}
+
+.mg-b-20 {
+    margin-bottom: 20px;
+}
+
+/* */
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+:root {
+    --maincolor: #6195ff;
+    --graycolor: #999;
+    --whitecolor: #fff;
+}
+
+.bg-gray {
+    background: #f9f9f9;
+}

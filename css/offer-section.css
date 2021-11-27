@@ -1,0 +1,41 @@
+
+
+.offer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.offer-item {
+    width: 32%;
+    margin: 20px 0;
+    padding: 30px 15px 30px 70px;
+    border: 1px solid #e8e8e8;
+    position: relative;
+    transition: color 0.5s;
+}
+
+.offer-item i {
+    position: absolute;
+    top: 35px;
+    left: 18px;
+    color: var(--maincolor);;
+    font-size: 26px;
+}
+
+.offer-item-title {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+}
+
+.offer-item-desc {
+    text-transform: capitalize;
+    margin-bottom: 15px;
+    line-height: 1.6;
+    color: var(--graycolor);
+}
+
+.left-to-right-effect:hover .offer-item-title {
+    color: #e8e8e8;
+    cursor: pointer;
+}
